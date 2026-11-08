@@ -32,7 +32,48 @@ input,textarea{font:inherit;width:100%;padding:12px;border:1px solid #d9e1ee;bor
 <div class="account"><span class="pill">🪙 <b id="coinCount">0</b> coin</span><button class="pill" id="topProfile" style="cursor:pointer">👤 <b id="topName">Profil</b></button></div></div>
 <nav id="nav"><button class="active" data-page="home">Bosh sahifa</button><button data-page="subjects">Fanlar</button><button data-page="mandatory">Majburiy blok</button><button data-page="cefr">CEFR</button><button data-page="books">Kitoblar</button><button data-page="ranking">Reyting</button><button data-page="profile">Profil</button></nav></header>
 <main>
-<section id="home" class="page active"><div class="hero"><span class="tag">O‘RGAN • SINAB KO‘R • RIVOJLAN</span><h1>Bilimingni sinab ko‘r!</h1><p class="muted">Fanlar bo‘yicha oson, o‘rtacha va qiyin darajadagi testlar, kitoblar kutubxonasi, CEFR mashqlari va o‘quvchilar reytingi.</p><button class="primary" onclick="showPage('subjects')">Testlarni boshlash →</button></div><div class="panel" style="margin-top:15px">ZIYONET asoschisi: <b>Sevinch Mirzayevna</b></div></section>
+<section id="home" class="page active">
+<div class="hero">
+<span class="tag">O‘RGAN • SINAB KO‘R • RIVOJLAN</span>
+<h1>Bilimingni sinab ko‘r!</h1>
+<p class="muted">ZIYONET — bilim olish, o‘z ustida ishlash va natijalarni kuzatish uchun yaratilgan ta’lim platformasi. Fanlar bo‘yicha testlar, majburiy blok, CEFR mashqlari va kitoblar kutubxonasi bir joyda!</p>
+<button class="primary" onclick="showPage('subjects')">Testlarni boshlash →</button>
+</div>
+<div class="panel" style="margin-top:15px">
+<h2>ZIYONET haqida</h2>
+<p class="muted">ZIYONET o‘quvchilarga maktab fanlarini mustahkamlash, bilimini turli darajadagi savollar orqali sinash va yangi ko‘nikmalarni rivojlantirishga yordam beruvchi o‘quv platformasidir. Bu yerda har bir o‘quvchi o‘ziga qulay yo‘nalishni tanlab, mustaqil shug‘ullanishi mumkin.</p>
+</div>
+<div style="margin-top:22px">
+<h2>Nimalar qilish mumkin?</h2>
+<div class="grid">
+<div class="card"><div class="emoji">📚</div><h3>Maktab fanlari</h3><p class="muted">Xorijiy tillar, matematika, fizika, kimyo, biologiya, informatika, tarix, geografiya hamda ona tili va adabiyot fanlaridan test ishlang.</p><button class="secondary" onclick="showPage('subjects')">Fanlarni ko‘rish</button></div>
+<div class="card"><div class="emoji">📝</div><h3>Majburiy blok</h3><p class="muted">Matematika, ona tili va adabiyot hamda O‘zbekiston tarixi bo‘yicha bilimlaringizni sinab ko‘ring.</p><button class="secondary" onclick="showPage('mandatory')">Majburiy blokka o‘tish</button></div>
+<div class="card"><div class="emoji">🌍</div><h3>CEFR tayyorgarligi</h3><p class="muted">Reading, Listening, Writing va Speaking yo‘nalishlarida ingliz tilini mashq qiling.</p><button class="secondary" onclick="showPage('cefr')">CEFR bo‘limi</button></div>
+<div class="card"><div class="emoji">📖</div><h3>Kitoblar kutubxonasi</h3><p class="muted">Turli asarlar bilan tanishing, ularning tavsiflarini o‘qing va kitoblar bo‘yicha testlarni bajaring.</p><button class="secondary" onclick="showPage('books')">Kitoblarni ko‘rish</button></div>
+<div class="card"><div class="emoji">🪙</div><h3>Coin va reyting</h3><p class="muted">Testlarda to‘g‘ri javob berganingiz uchun har bir to‘g‘ri javobga 10 coin oling. Natijalaringizni reytingda kuzating.</p><button class="secondary" onclick="showPage('ranking')">Reytingni ko‘rish</button></div>
+<div class="card"><div class="emoji">👤</div><h3>Shaxsiy profil</h3><p class="muted">Yig‘ilgan coinlar, bajarilgan testlar va natijalaringizni shaxsiy profilingizda ko‘ring.</p><button class="secondary" onclick="showPage('profile')">Profilim</button></div>
+</div>
+</div>
+<div class="panel" style="margin-top:22px">
+<h2>ZIYONET kimlar uchun?</h2>
+<p class="muted">Platforma 5–11-sinf o‘quvchilari, maktab fanlarini takrorlamoqchi bo‘lgan yoshlar va ingliz tilini o‘rganib, CEFR imtihoniga tayyorlanayotganlar uchun mo‘ljallangan.</p>
+</div>
+<div class="panel" style="margin-top:15px">
+<h2>Qanday boshlash mumkin?</h2>
+<ol class="muted">
+<li>Ro‘yxatdan o‘ting yoki profilingizga kiring.</li>
+<li>Kerakli bo‘limni tanlang: fanlar, majburiy blok, CEFR yoki kitoblar.</li>
+<li>Test darajasini tanlab, savollarga javob bering.</li>
+<li>Natijangizni ko‘ring, coin to‘plang va profilingizda yutuqlaringizni kuzating.</li>
+</ol>
+</div>
+<div class="hero" style="margin-top:22px;text-align:center">
+<h2>Bilim sari yangi qadam!</h2>
+<p class="muted">Har kuni oz-ozdan o‘rganing, izlaning va rivojlaning.</p>
+<strong>ZIYONET — O‘rgan. Izlan. Rivojlan.</strong>
+</div>
+<div class="panel" style="margin-top:15px;text-align:center">ZIYONET asoschisi: <b>Sevinch Mirzayevna</b></div>
+</section>
 <section id="subjects" class="page"><h2>Fanlar</h2><p class="muted">Avval fan va qiyinlik darajasini tanlang. Har bir darajada 10 ta savol bor.</p><div class="grid" id="subjectGrid"></div><div id="quiz" class="panel hidden" style="margin-top:15px"></div></section>
 <section id="mandatory" class="page"><h2>Majburiy blok</h2><div class="grid" id="mandatoryGrid"></div><div id="mandatoryQuiz" class="panel hidden" style="margin-top:15px"></div></section>
 <section id="cefr" class="page"><h2>CEFR</h2><p class="muted">Reading, Listening (hozircha matnli), Writing va Speaking mashqlari.</p><div class="grid" id="cefrGrid"></div><div id="cefrPanel" class="panel hidden"></div></section>
